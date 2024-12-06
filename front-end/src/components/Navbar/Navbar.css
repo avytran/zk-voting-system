@@ -1,0 +1,94 @@
+.nav-section{
+    width: 100%;  
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;  
+    z-index: 2000; 
+    margin-top: 2vw; 
+    transition: transform 0.5s ease;
+}
+
+.nav {  
+    width: 80%;  
+    height: 100%;
+    display: flex;   
+    justify-content: center; 
+    background-color: #213C67;  
+    padding: 0.5vw 2vw;
+    border-radius: 1.5vw;
+    transition: transform 0.5s ease; 
+}  
+
+.nav-hidden {
+    transform: translateY(-200%); /* Move the navbar up to hide it */
+  }
+
+.nav__logo {
+    display: flex;
+}
+
+.nav__logo p {
+    margin: 0;
+    color: aliceblue;
+    font-size: 1.2vw;
+    font-family: EurostileBold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.nav__logo img {  
+    width: 4vw;  
+    height: auto;  
+    border-radius: 0.7vw;
+    margin-right: 1vw; 
+    box-sizing: border-box;
+}  
+
+.nav__menu {  
+    width: 100%;  
+    display: flex;  
+    justify-content: space-around; 
+    align-items: center; 
+}  
+
+.nav__item {   
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 0.5vw;
+    color: white;
+    font-family: EurostileBold;
+    text-decoration: none;  
+    cursor: pointer;  
+    transition: color 0.5s ease, transform 0.5s ease;
+} 
+
+.nav__item-content{
+    font-size: 1vw;
+    text-shadow: 0.1vw 0.1vw 0.2vw rgba(0, 0, 0, 0.5); 
+}
+
+.nav__item:hover {  
+    transform: scale(1.1); 
+    color: #FC3443;
+}
+
+.nav__login{
+    background-color: #FC3443;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 1vw;
+    color: aliceblue;
+    font-size: 1vw;
+    font-family: EurostileBold;
+    padding: 0.8vw 2.5vw;
+    border: none;
+    transition: color 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+.nav__login:hover{
+    transform: scale(1.07); 
+    background-color: #fc3441d1;
+}

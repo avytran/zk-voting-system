@@ -1,0 +1,87 @@
+.voting-section{
+    margin-top: 10vw;
+    width: 80%;
+    height: 100vh;
+}
+
+.voting-title{
+    font-family: EurostileBold;
+    text-align: center;
+    color: #FC3443;
+    margin: 0;
+    font-size: 3vw;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.candidates{
+    margin-top: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử ứng cử viên theo chiều ngang */
+    gap: 7vw; /* Khoảng cách giữa các ứng cử viên */
+    flex-wrap: wrap; /* Cho phép phần tử xuống dòng khi không còn đủ không gian */
+
+}
+.candidate{
+    width: 22vw;
+    height: auto;
+    position: relative;
+}
+
+.candidate-img{
+    width: 22vw;
+    height: 30vw;
+    box-sizing: border-box;
+    border-radius: 2vw;
+}
+
+.candidate-info{
+    width: 22vw;
+    height: 30%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0.3vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2vw;
+}
+
+.candidate-name{
+    margin: 0;
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: EurostileBold;
+    color: rgba(251, 253, 255, 0.934);
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.candidate-party{
+    margin: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: EurostileRegular;
+    color: rgb(225, 225, 225);
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.candidate-vote{
+    position: absolute;
+    bottom: 0.8vw;
+    background-color: #FC3443;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 1vw;
+    color: aliceblue;
+    font-size: 1vw;
+    font-family: EurostileBold;
+    padding: 0.6vw 2vw;
+    border: none;
+    transition: color 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+.candidate-vote:hover{
+    transform: scale(1.07); 
+    background-color: rgb(187, 41, 51)
+}

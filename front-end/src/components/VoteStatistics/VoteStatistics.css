@@ -1,0 +1,19 @@
+.vote-statistics-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vote-statistics-title{
+    font-family: EurostileBold;
+    color:aliceblue;
+    margin: 0;
+    font-size: 3vw;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+
+.vote-statistics-progress{
+    width: 100%;
+}

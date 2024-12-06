@@ -1,0 +1,36 @@
+.progress-container {
+    margin: 2vw 0;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    position: relative;
+    background-color: #ddd;
+    border-radius: 2vw;
+    width: 100%;
+    height: 3vw;
+    position: relative;
+  }
+
+  .progress-votes{
+    position: absolute;
+    right: 0.5vw;
+    bottom: -0.5vw;
+  }
+  
+  .progress.democrat {
+    background-color: #316fd3;
+    height: 100%;
+    border-radius: 2vw;
+  }
+
+  .progress.republic {
+    background-color: #FC3443;
+    height: 100%;
+    border-radius: 2vw;
+  }
+
+  .progress-name{
+    color:aliceblue;
+    font-size: 1.5vw;
+  }
