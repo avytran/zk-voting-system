@@ -6,7 +6,6 @@ export const HomePage = () => {
     
     return (
         <div className="homepage-section">
-            <Navbar/>
             <Introduction/>
         </div>
     )

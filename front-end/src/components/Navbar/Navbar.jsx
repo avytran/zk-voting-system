@@ -3,7 +3,7 @@ import './Navbar.css';
 
 import { Flag_of_the_US } from '../../assets/images';
 
-export const Navbar = () => {
+export const Navbar = ({isLogged}) => {
   const [scrollingDown, setScrollingDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0); // Track last scroll position
 
@@ -45,7 +45,7 @@ export const Navbar = () => {
                 <p className="nav__item-content">Contact</p>
             </a>
 
-            <button className="nav__login">Log In</button>
+            <a href='/log-in' className="nav__login" style={{ display: isLogged ? 'none' : '' }}>Log In</a>
         </div>
       </div>
     </div>

@@ -18,7 +18,20 @@ const candidatesController = {
             console.error("Đã xảy ra lỗi khi lấy tổng bình chọn:", error);  
             return res.status(500).json({ message: "Đã xảy ra lỗi trong quá trình lấy dữ liệu ứng viên." });  
         }  
-    }  
+    },
+    updateVotes: async (req, res) => {
+        try {
+            const candidateID = req.body.params.CandidateID;
+            const updatedRows = await candidatesService.updateVotes(candidateID);
+            if (updatedRows === 0) {
+                return res.status(404).json({ error: 'Update candidates error' });
+              }
+            return res.status(200).json(updatedRows);
+        } catch (error) {
+            console.error(error);
+            return res.status(500).json({ error: 'An error occurred', details: error.message })
+        }
+    }
 
 };  
 

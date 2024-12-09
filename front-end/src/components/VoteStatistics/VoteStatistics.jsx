@@ -1,8 +1,13 @@
 import './VoteStatistics.css';
 
 import { ElectionProgress } from '../ElectionProgress/ElectionProgress';
+import { useEffect } from 'react';
 
-export const VoteStatistics = ({candidates, totalVotes}) => {
+export const VoteStatistics = ({candidates, totalVotes, setTotalVotes}) => {
+
+  useEffect(() => {
+    
+  }, [totalVotes])
 
     return (
         <div className="vote-statistics-section">
